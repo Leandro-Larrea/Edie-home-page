@@ -51,8 +51,19 @@ const takeOut = () =>{
 const takeBack = () =>{
 	document.querySelector(".footer__email-input-button").classList.remove("footer__email-input-button-fly")
 }
+const sizes = () =>{ 
+	
+	if (window.innerWidth >= 660) {
+		navClasses.remove("nav__mobile-container-item-on");
+		navClasses.add("nav__mobile-container-item-off");
+		mobileIconsClasses.remove("fa-xmark")
+		mobileIconsClasses.add("fa-bars")
+	}
+	}
 
+onresize 
 document.querySelector(".footer__email-input").addEventListener("keyup",tester)
 document.querySelector(".footer__email-input").addEventListener("blur",tester);
 document.querySelector(".footer__email-input").addEventListener("click",takeOut)
 document.querySelector(".footer__email-input").addEventListener("blur",takeBack)
+window.addEventListener("resize", sizes);
