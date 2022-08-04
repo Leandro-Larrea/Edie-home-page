@@ -121,6 +121,7 @@ button{
 .section__card-buttons{
 	padding: 10px 0;
 	display: flex;
+	max-width: 70%;
 	justify-content: space-between;
 	margin: 5%  0 0 0%;
 

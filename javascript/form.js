@@ -61,7 +61,7 @@ const sizes = () =>{
 	}
 	}
 
-onresize 
+
 document.querySelector(".footer__email-input").addEventListener("keyup",tester)
 document.querySelector(".footer__email-input").addEventListener("blur",tester);
 document.querySelector(".footer__email-input").addEventListener("click",takeOut)
